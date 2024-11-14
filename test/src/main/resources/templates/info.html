@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>main</title>
+</head>
+<body>
+	<table>
+  		<tr>
+    		<th>email</th>
+    		<th>password</th>
+    		<th>name</th>
+    		<th>phone</th>
+  		</tr>
+  		<tr>
+    		<td th:text="${petowner.email}"></td>
+    		<td th:text="${petowner.password}"></td>
+    		<td th:text="${petowner.name}"></td>
+    		<td th:text="${petowner.phone}"></td>
+  		</tr>
+	</table>
+	<hr>
+    session 값 확인: <p th:text="${session.loginEmail}"></p>
+    <a href="/update">내 정보 수정하기</a>
+    <a href="/logout">로그아웃</a>
+</body>
+</html>

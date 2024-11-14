@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: test
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/pethub
+    username: root
+  jpa:
+    database: mysql
+server:
+  port: 8084
